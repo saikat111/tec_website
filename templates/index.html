@@ -1,0 +1,297 @@
+{% extends "layout.html" %}
+{% block body %}
+    <!--END HEADER SECTION-->
+
+<!-- SLIDER -->
+<section>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item slider1 active">
+                <img src="{{ url_for('static', filename= 'images/slider/1.jpg') }}" alt="">
+                <div class="carousel-caption slider-con">
+                    <h2>Welcome to</h2>
+                    <h2><span>TMSS ENGINEERING COLLEGE</span></h2>
+                    <a href="#" class="bann-btn-1">All Courses</a><a href="#" class="bann-btn-2">Read More</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{{ url_for('static', filename= 'images/slider/2.jpg') }}" alt="">
+                <div class="carousel-caption slider-con">
+                    <h2><span>Admission open</span></h2>
+                    <br>
+                    <br>
+                    <a href="#" class="bann-btn-1">Admission</a><a href="#" class="bann-btn-2">Read More</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="{{ url_for('static', filename= 'images/slider/3.jpg') }}" alt="">
+                <div class="carousel-caption slider-con">
+                    <h2> <span>TMSS ENGINEERING COLLEGE</span></h2>
+                    <br>
+                    <br>
+                    <a href="#" class="bann-btn-1">All Courses</a><a href="#" class="bann-btn-2">Read More</a>
+                </div>
+            </div>
+        </div>
+
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <i class="fa fa-chevron-left slider-arr"></i>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <i class="fa fa-chevron-right slider-arr"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- QUICK LINKS -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="wed-hom-ser">
+                    <ul>
+                        <li>
+                            <a href="/awards" class="waves-effect waves-light btn-large wed-pop-ser-btn"><img src="{{ url_for('static', filename= 'images/icon/h-ic1.png') }}" alt=""> Academy</a>
+                        </li>
+                        <li>
+                            <a href="/admission" class="waves-effect waves-light btn-large wed-pop-ser-btn"><img src="{{ url_for('static', filename= 'images/icon/h-ic2.png') }}" alt=""> Admission</a>
+                        </li>
+                        <li>
+                            <a href="/all-courses" class="waves-effect waves-light btn-large wed-pop-ser-btn"><img src="{{ url_for('static', filename='images/icon/h-ic4.png') }}" alt=""> Courses</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DISCOVER MORE -->
+    <section>
+        <div class="container com-sp pad-bot-70">
+            <div class="row">
+                <div class="con-title">
+                    <h2>Discover <span>More</span></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="ed-course">
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="ed-course-in">
+                            <a class="course-overlay" href="/admission">
+                                <img src="{{ url_for('static', filename= 'images/h-about.jpg') }}" alt="">
+                                <span>Online apply</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="ed-course-in">
+                            <a class="course-overlay" href="/admission">
+                                <img src="{{ url_for('static', filename= 'images/h-about1.jpg') }}" alt="">
+                                <span>Couse</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="ed-course-in">
+                            <a class="course-overlay" href="/dashboard">
+                                <img src="{{ url_for('static', filename= 'images/h-cam.jpg') }}" alt="">
+                                <span>Gallery</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="ed-course-in">
+                            <a class="course-overlay" href="/all-courses">
+                                <img src="{{ url_for('static', filename= 'images/h-about1.jpg') }}" alt="">
+                                <span>Life of TEC</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="ed-course-in">
+                            <a class="course-overlay" href="/db-time-line">
+                                <img src="{{ url_for('static', filename= 'images/h-adm.jpg') }}" alt="">
+                                <span>Exam Time Line</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="ed-course-in">
+                            <a class="course-overlay" href="/db-time-line">
+                                <img src="{{ url_for('static', filename= 'images/h-adm.jpg') }}" alt="">
+                                <span>Newsa and events</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="ed-course-in">
+                            <a class="course-overlay" href="/db-time-line">
+                                <img src="{{ url_for('static', filename= 'images/h-adm.jpg') }}" alt="">
+                                <span>Job</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-12">
+                        <div class="ed-course-in">
+                            <a class="course-overlay" href="/events">
+                                <img src="{{ url_for('static', filename= 'images/h-res1.jpg') }}" alt="">
+                                <span>Notice board</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPULAR COURSES -->
+    <section class="pop-cour">
+        <div class="container com-sp pad-bot-70">
+            <div class="row">
+                <div class="con-title">
+                    <h2>OUR FEATURED <span> COURSES</span></h2>
+                    <p>Our Featured Courses are selected through a rigorous process and uniquely created for each semester.</p>
+                 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div>
+                        <!--POPULAR COURSES-->
+                        <div class="home-top-cour">
+                            <!--POPULAR COURSES IMAGE-->
+                            <div class="col-md-3"> <img src="{{ url_for('static', filename='images/course/eee.jpg')}}" alt=""> </div>
+                            <!--POPULAR COURSES: CONTENT-->
+                            <div class="col-md-9 home-top-cour-desc">
+                                <a href="/eee">
+                                    <h3><i>Electrical and Electronics Engineering</i></h3>
+                                </a>
+                               
+                                <div class="hom-list-share">
+                                    <ul>
+                                        <li><a href="/eee"><i class="fa fa-bar-chart" aria-hidden="true"></i> INFO</a> </li>
+                                   
+                                     
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--POPULAR COURSES-->
+                        <div class="home-top-cour">
+                            <!--POPULAR COURSES IMAGE-->
+                            <div class="col-md-3"> <img src="{{ url_for('static', filename='images/course/civil.jpg')}}" alt=""> </div>
+                            <!--POPULAR COURSES: CONTENT-->
+                            <div class="col-md-9 home-top-cour-desc">
+                                <a href="/civil">
+                                    <h3><i>Civil Engineering</i></h3>
+                                </a>
+                               
+                                <div class="hom-list-share">
+                                    <ul>
+                                        <li><a href="/civil"><i class="fa fa-bar-chart" aria-hidden="true"></i> INFO</a> </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--POPULAR COURSES-->
+                        <div class="home-top-cour">
+                            <!--POPULAR COURSES IMAGE-->
+                            <div class="col-md-3"> <img src="{{ url_for('static', filename='images/course/txtile.jpg') }}" alt=""> </div>
+                            <!--POPULAR COURSES: CONTENT-->
+                            <div class="col-md-9 home-top-cour-desc">
+                                <a href="/textile">
+                                    <h3><i>Textile Engineering</i></h3>
+                                </a>
+                               
+                               
+                                <div class="hom-list-share">
+                                    <ul>
+                                        <li><a href="/textile"><i class="fa fa-bar-chart" aria-hidden="true"></i> INFO</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--POPULAR COURSES-->
+                        <div class="home-top-cour">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <!--POPULAR COURSES-->
+                        <div class="home-top-cour">
+                            <!--POPULAR COURSES IMAGE-->
+                            <div class="col-md-3"> <img src="{{ url_for('static', filename='images/course/cse.jpg') }}" alt=""> </div>
+                            <!--POPULAR COURSES: CONTENT-->
+                            <div class="col-md-9 home-top-cour-desc">
+                                <a href="/cse">
+                                    <h3><i>Computer Science and Engineering</i></h3>
+                                </a>
+
+
+                                <div class="hom-list-share">
+                                    <ul>
+                                        <li><a href="/cse"><i class="fa fa-bar-chart" aria-hidden="true"></i> INFO</a> </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!--POPULAR COURSES-->
+                        <div class="home-top-cour">
+                            <!--POPULAR COURSES IMAGE-->
+                            <div class="col-md-3"> <img src="{{ url_for('static', filename='images/course/ice.jpg') }}" alt=""> </div>
+                            <!--POPULAR COURSES: CONTENT-->
+                            <div class="col-md-9 home-top-cour-desc">
+                                <a href="/ice">
+                                    <h3><i>Information and Communication Engineering</i></h3>
+                                </a>
+
+                               
+                                <div class="hom-list-share">
+                                    <ul>
+                                        <li><a href="/ice"><i class="fa fa-bar-chart" aria-hidden="true"></i> INFO</a> </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                      
+    </section>
+
+    <!-- UPCOMING EVENTS -->
+
+    <!-- NEWS AND EVENTS -->
+    <section>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="bot-gal h-gal ho-event-mob-bot-sp">
+                        <h4>Photo Gallery</h4>
+                        <ul>
+                            <li><img class="materialboxed" data-caption="Education master image captions" src="{{ url_for('static', filename= 'images/ami/8.jpg') }}" alt="">
+                            </li>
+                            <li><img class="materialboxed" data-caption="Education master image captions" src="{{ url_for('static', filename= 'images/ami/8.jpg') }}" alt="">
+                            </li>
+                            <li><img class="materialboxed" data-caption="Education master image captions" src="{{ url_for('static', filename= 'images/ami/8.jpg') }}" alt="">
+                            </li>
+                            <li><img class="materialboxed" data-caption="Education master image captions" src="{{ url_for('static', filename= 'images/ami/8.jpg') }}" alt="">
+                            </li>
+                            <li><img class="materialboxed" data-caption="Education master image captions" src="{{ url_for('static', filename= 'images/ami/8.jpg') }}" alt="">
+                            </li>
+                            <li><img class="materialboxed" data-caption="Education master image captions" src="{{ url_for('static', filename= 'images/ami/8.jpg') }}" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+	{% endblock %}
